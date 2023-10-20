@@ -4,8 +4,8 @@
 Simple CNG calculator app for calculating cng cost.
 
 
-### Live:
-
+### Live: 
+[CNG CALCULATOR](https://kishor-selvam.github.io/CNG-Calculator/)
 
 ### Screenshots
 
