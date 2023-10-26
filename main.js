@@ -27,6 +27,7 @@ calculateBtn.addEventListener("click", (e) => {
       validationAlertEl.innerHTML = "";
     }, 1500);
   } else if (tripDistanceEl.value == "") {
+    console.log(validationAlertEl)
     validationAlertEl.className =
       "block text-center mt-5 bg-red-600 rounded text-white py-1.5";
     const newEl = document.createElement("p");
@@ -65,7 +66,7 @@ calculateBtn.addEventListener("click", (e) => {
     const result = (distanceKM / fuelEfficiency) * fuelCost;
     finalAnsEl.innerHTML = "";
     finalAnsEl.className =
-      "bg-emerald-500 rounded py-1.5 text-white text-center";
+    "bg-emerald-500 rounded py-1.5 text-white text-center";
     const finalAns = "Your fuel cost will be around: ₹ " + result;
     const newEl = document.createElement("p");
     newEl.innerText = finalAns;
