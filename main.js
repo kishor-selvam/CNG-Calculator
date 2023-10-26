@@ -17,8 +17,9 @@ calculateBtn.addEventListener("click", (e) => {
     tripDistanceEl.value == "" &&
     fuelCostEl.value == ""
   ) {
+    validationAlertEl.innerHTML = "";
     validationAlertEl.className =
-      "block text-center mt-5 bg-red-600 rounded text-white py-1.5";
+      "text-center mt-5 bg-red-600 rounded text-white py-1.5";
     const newEl = document.createElement("p");
     newEl.innerText = "fill the all input fields";
     validationAlertEl.append(newEl);
@@ -28,8 +29,9 @@ calculateBtn.addEventListener("click", (e) => {
     }, 1500);
   } else if (tripDistanceEl.value == "") {
     console.log(validationAlertEl)
+    validationAlertEl.innerHTML = "";
     validationAlertEl.className =
-      "block text-center mt-5 bg-red-600 rounded text-white py-1.5";
+      "text-center mt-5 bg-red-600 rounded text-white py-1.5";
     const newEl = document.createElement("p");
     newEl.innerText = "Please enter Trip Distance value";
     validationAlertEl.append(newEl);
@@ -38,8 +40,9 @@ calculateBtn.addEventListener("click", (e) => {
       validationAlertEl.innerHTML = "";
     }, 1500);
   } else if (fuelEfficiencyEl.value == "") {
+    validationAlertEl.innerHTML = "";
     validationAlertEl.className =
-      "block text-center mt-5 bg-red-600 rounded text-white py-1.5";
+      "text-center mt-5 bg-red-600 rounded text-white py-1.5";
     const newEl = document.createElement("p");
     newEl.innerText = "Please enter Fuel Efficiency value";
     validationAlertEl.append(newEl);
@@ -49,8 +52,9 @@ calculateBtn.addEventListener("click", (e) => {
     }, 1500);
     console.log("Enter fuel efficiency value");
   } else if (fuelCostEl.value == "") {
+    validationAlertEl.innerHTML = "";
     validationAlertEl.className =
-      "block text-center mt-5 bg-red-600 rounded text-white py-1.5";
+      "text-center mt-5 bg-red-600 rounded text-white py-1.5";
     const newEl = document.createElement("p");
     newEl.innerText = "Please enter Fuel Cost value";
     validationAlertEl.append(newEl);
